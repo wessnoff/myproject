@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ekzarta-sport</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Ekzarta</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Обучение</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">О нас</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Наша команда</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+              <div class="jumbotron">
+              <div class="intro-lead-in">
+                <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Персональные 3D-тренировки на подвесных системах</h3>
+                <h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i> для увлеченных спортом</h4>
+                <h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i> для ведущих малоподвижный образ жизни</h4>
+                <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Подбор индивидуальной программы занятий</h3>
+                <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Восстановление и улучшение контроля над телом</h3>
+                <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Увеличение силы и выносливости</h3>
+                <h3><i class="fa fa-check-square-o" aria-hidden="true"></i> Здоровые суставы и сильные мышцы</h3>
+              </div>
+              </div>
+              <a href="#services" class="page-scroll btn btn-xl">Узнать больше</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Область применения</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Тренировки</h4>
+                    <p class="text-muted">
+                        При помощи специальных тестов Экзарта выявляются слабые и неработающие мышцы,
+                        что позволяет подобрать индивидуальную программу тренировок.
+                        Тренировка на установке Экзарта, основанна на активизации неработающих мышц.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-heartbeat fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Восстановление</h4>
+                    <p class="text-muted">
+                        Восстановление подвижности суставов и улучшение функций мышц.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-medkit fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Здоровье</h4>
+                    <p class="text-muted">
+                        Достижение оптимального результата в долгосрочной перспективе. Позволит чувствовать себя здоровым.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Обучение и семинары</h2>
+                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                       <img src="{% static 'img/portfolio/photo_2.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Экзарта Silver</h4>
+                        <p class="text-muted">1-ая ступень</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static 'img/portfolio/photo_3.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Экзарта Gold</h4>
+                        <p class="text-muted">2-ая ступень</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{% static 'img/portfolio/photo_4.jpg' %}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Экзарта Platinum</h4>
+                        <p class="text-muted">3-ая ступень</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">История</h2>
+                    <h3 class="section-subheading text-muted">история развития</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{% static 'img/about/1.jpg' %}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2017</h4>
+                                    <h4 class="subheading">Начало</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <!--<li class="timeline-inverted">-->
+                            <!--<div class="timeline-image">-->
+                                <!--<img class="img-circle img-responsive" src="img/about/2.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4>March 2011</h4>-->
+                                    <!--<h4 class="subheading">An Agency is Born</h4>-->
+                                <!--</div>-->
+                                <!--<div class="timeline-body">-->
+                                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<div class="timeline-image">-->
+                                <!--<img class="img-circle img-responsive" src="img/about/3.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="timeline-panel">-->
+                                <!--<div class="timeline-heading">-->
+                                    <!--<h4>December 2012</h4>-->
+                                    <!--<h4 class="subheading">Transition to Full Service</h4>-->
+                                <!--</div>-->
+                                <!--<div class="timeline-body">-->
+                                    <!--<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{% static 'img/about/4.jpg' %}" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Июнь 2017</h4>
+                                    <h4 class="subheading">Продолжение</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Будь
+                                    <br>частью
+                                    <br>истории</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Наша команда</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="{% static 'img/team/1.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">Тренер</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="{% static 'img/team/2.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Тренер</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="{% static 'img/team/3.jpg' %}" class="img-responsive img-circle" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Администратор</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Наша партнеры</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.tut.by">
+                        <img src="{% static 'img/logos/envato.jpg' %}" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="{% static 'img/logos/designmodo.jpg' %}" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="{% static 'img/logos/themeforest.jpg' %}" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="{% static 'img/logos/creative-market.jpg' %}" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Наши контакты</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy;</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Сведения о регистрации</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>ЭКЗАРТА Silver</h2>
+                                <p class="item-intro text-muted">1-я ступень<br>Продолжительность: 5 дней</p>
+                                <i class="fa fa-certificate fa-4x" aria-hidden="true" style="color: #c0c0c0;margin-bottom: 5px"></i>
+                                <!-- <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="Экзарта silver"> -->
+                                  <p class="main">ЭКЗАРТА Silver - это начальный уровень изучения технологии ЭКЗАРТА. После завершения курса ЭКЗАРТА Silver вы научитесь использовать диагностическую систему ЭКЗАРТА, овладеете базовыми техниками и упражнениями, которые позволяют быстро уменьшить и устранить боль, восстановить функциональные движения.</p>
+                                  <p class="main">Простота и эффективность технологии с использованием кинезитерапевтической установки «ЭКЗАРТА» делает ее незаменимым дополнением к обычным методам терапии и не имеет равных для устранения источника боли и улучшения функций опорно-двигательного аппарата.</p>
+                                  <p class="main">Курс ЭКЗАРТА Silver наглядно демонстрирует возможности применения установки «ЭКЗАРТА» для минимизации усилий инструктора при необходимости в тяжелой механической работе, с использованием ключевых биомеханических принципов оптимальной активации мышц и улучшения функций: </p>
+                                  <ul class="main_ul">
+                                      <li>большое количество упражнений в закрытой кинематической цепи (упражнения с весом собственного тела)</li>
+                                      <li>неустойчивость (нестабильность) опоры</li>
+                                      <li>движения в нескольких плоскостях (3D-тренировка)</li>
+                                      <li>точная прогрессия</li>
+                                      <li>движения без боли</li>
+                                  </ul>
+                                    <strong>Пройдя курс ЭКЗАРТА Silver, вы сможете быстро помочь своим пациентам!</strong></p>
+                                <ul class="list-inline">
+                                    <li>Дата: Июль 2014</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>ЭКЗАРТА Gold</h2>
+                                <p class="item-intro text-muted">2-я ступень<br>Продолжительность: 5 дней</p>
+                                <!-- <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt=""> -->
+                                <i class="fa fa-certificate fa-4x" aria-hidden="true" style="color: #ffd700; margin-bottom: 5px"></i>
+                                <p class="main">Во время прохождения курса ЭКЗАРТА Gold вы отточите базовые техники и упражнения, которые позволяют быстро уменьшить или устранить боль и восстановить функциональные движения.
+                                    Простота и эффективность технологии с использованием кинезитерапевтической установки «ЭКЗАРТА» делает ее незаменимым дополнением к обычным методам терапии, и не имеет равных для уменьшения боли и улучшения функций.</p>
+                                    <p class="main">ЭКЗАРТА Gold является следующей ступенью после курса ЭКЗАРТА Silver. ЭКЗАРТА Gold необходимо пройти, если Вы стремитесь получить более глубокие практические и теоретические знания по применению технологии ЭКЗАРТА на различных отделах позвоночника и конечностях.</p>
+                                    <p class="main">Практические упражнения с большим количеством прикладных рекомендаций от наших преподавателей и опытных сокурсников, а так же взаимодействие между участниками курса, является основным направлением курсов. ЭКЗАРТА Gold включает:</p>
+                                <ul class="main_ul">
+                                    <li>ЭКЗАРТА Gold Спина и таз</li>
+                                    <li>ЭКЗАРТА Gold Шея</li>
+                                    <li>ЭКЗАРТА Gold Верхние конечности</li>
+                                    <li>ЭКЗАРТА Gold Нижние конечности</li>
+                                    <li>ЭКЗАРТА Gold Интеграция. Уроки мастерства.</li>
+                                </ul>
+                                <p class="main">После успешного освоения программы ЭКЗАРТА Gold вы поднимете эффективность работы со сложными пациентами на новую высоту!
+                                    "С 01 июня 2016 года для курсантов, желающих обучиться методике «Экзарта Silver», действует следующая программа поддержки:</p>
+                                <ol>
+                                    <li>При предварительной покупке или оснащении Вашего кабинета кинезитерапии системой «Экзарта», стоимость обучения составит 22 500 рублей.</li>
+                                    <li>Вы также можете, не приобретая и не имея кинезиотерпевтическую установку «Экзарта», пройти обучение «Экзарта» за 30 000 р.</li>
+                                </ol>
+                                <p class="main">В подарок Вы получите тренажер для индивидуального использования «Экзарта-Спорт». Для мастеров и опытных курсантов, стремящихся улучшить свои навыки и освоить уникальную методику «Экзарта Gold», действует следующая программа совершенствования: </p>
+                                <ol class="main_ul">
+                                    <li>При предварительном заказе или покупке потолочной или свободно-стоящей системы «Экзарта» стоимость обучения составит 30 000 рублей.</li>
+                                    <li>В случае отсутствия установки «Экзарта», стоимость обучения составит 50 000 рублей.</li>
+                                </ol>
+                                  <strong>Пройдя курс ЭКЗАРТА Gold, вы сможете быстро помочь своим пациентам!</strong></p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+                                    <li>Client: Round Icons</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>ЭКЗАРТА Platinum</h2>
+                                <p class="item-intro text-muted">3-я ступень<br>Продолжительность: 5 дней</p>
+                                <i class="fa fa-certificate fa-4x" aria-hidden="true" style="color: #E5E4E2; margin-bottom: 5px"></i>
+                                <!-- <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt=""> -->
+                                <p class="main">Во время прохождения курса ЭКЗАРТА Gold вы отточите базовые техники и упражнения, которые позволяют быстро уменьшить или устранить боль и восстановить функциональные движения. Простота и эффективность технологии с использованием кинезитерапевтической установки «ЭКЗАРТА» делает ее незаменимым дополнением к обычным методам терапии, и не имеет равных для уменьшения боли и улучшения функций. ЭКЗАРТА Gold является следующей ступенью после курса ЭКЗАРТА Silver. ЭКЗАРТА Gold необходимо пройти, если Вы стремитесь получить более глубокие практические и теоретические знания по применению технологии ЭКЗАРТА на различных отделах позвоночника и конечностях. Практические упражнения с большим количеством прикладных рекомендаций от наших преподавателей и опытных сокурсников, а так же взаимодействие между участниками курса, является основным направлением курсов. ЭКЗАРТА Gold включает:</p>
+                                <ul class="main_ul">
+                                    <li>ЭКЗАРТА Gold Спина и таз</li>
+                                    <li>ЭКЗАРТА Gold Шея</li>
+                                    <li>ЭКЗАРТА Gold Верхние конечности</li>
+                                    <li>ЭКЗАРТА Gold Нижние конечности</li>
+                                    <li>ЭКЗАРТА Gold Интеграция. Уроки мастерства.</li>
+                                </ul>
+                                <p class="main">После успешного освоения программы ЭКЗАРТА Gold вы поднимете эффективность работы со сложными пациентами на новую высоту! "С 01 июня 2016 года для курсантов, желающих обучиться методике «Экзарта Silver», действует следующая программа поддержки:</p>
+                                <ol class="main_ul">
+                                    <li>При предварительной покупке или оснащении Вашего кабинета кинезитерапии системой «Экзарта», стоимость обучения составит 22 500 рублей.</li>
+                                    <li>Вы также можете, не приобретая и не имея кинезиотерпевтическую установку «Экзарта», пройти обучение «Экзарта» за 30 000 р.</li>
+                                </ol>
+                                <p class="main">В подарок Вы получите тренажер для индивидуального использования «Экзарта-Спорт». Для мастеров и опытных курсантов, стремящихся улучшить свои навыки и освоить уникальную методику «Экзарта Gold», действует следующая программа совершенствования: </p>
+                                <ol class="main_ul">
+                                    <li>При предварительном заказе или покупке потолочной или свободно-стоящей системы «Экзарта» стоимость обучения составит 30 000 рублей.</li>
+                                    <li>В случае отсутствия установки «Экзарта», стоимость обучения составит 50 000 рублей.</li>
+                                </ol>
+                                  <strong>Пройдя курс ЭКЗАРТА Gold, вы сможете быстро помочь своим пациентам!</strong></p>
+                                <ul class="list-inline">
+                                    <li>Дата: Июль 2014</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!--<script src="js/jqBootstrapValidation.js"></script>-->
+    <!--<script src="js/contact_me.js"></script>-->
+
+    <!-- Theme JavaScript -->
+    <script src="{% static 'js/agency.min.js' %}"></script>
+
+</body>
+
+</html>
