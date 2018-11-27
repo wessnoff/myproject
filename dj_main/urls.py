@@ -8,4 +8,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ekzarta.views.home, name='main'),
     path('training/',ekzarta.views.training, name='training'),
+    path('team/',ekzarta.views.team, name='team'),
+    path('about/',ekzarta.views.about, name='about'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
