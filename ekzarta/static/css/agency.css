@@ -115,15 +115,19 @@ fieldset[disabled] .btn-primary.active {
   border-radius: 3px;
   font-size: 18px;
   padding: 20px 40px;
+  transition: transform 2s;
 }
 .btn-xl:hover,
-.btn-xl:focus,
+
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
   color: white;
   background-color: #fec503;
   border-color: #f6bf01;
+}
+.btn-xl:hover {
+  transform: scaleY(2);
 }
 .btn-xl:active,
 .btn-xl.active,
