@@ -315,17 +315,17 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
-#training .training-item {
+#portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
 }
-#training .training-item .training-link {
+#portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
-#training .training-item .training-link .training-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
   position: absolute;
   width: 100%;
@@ -335,10 +335,10 @@ section h3.section-subheading {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
-#training .training-item .training-link .training-hover:hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
 }
-#training .training-item .training-link .training-hover .training-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   position: absolute;
   width: 100%;
   height: 20px;
@@ -348,35 +348,35 @@ section h3.section-subheading {
   margin-top: -12px;
   color: white;
 }
-#training .training-item .training-link .training-hover .training-hover-content i {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
-#training .training-item .training-link .training-hover .training-hover-content h3,
-#training .training-item .training-link .training-hover .training-hover-content h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
-#training .training-item .training-caption {
+#portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
   text-align: center;
   padding: 25px;
 }
-#training .training-item .training-caption h4 {
+#portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
 }
-#training .training-item .training-caption p {
+#portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
 }
-#training * {
+#portfolio * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #training .training-item {
+  #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
 }
@@ -666,12 +666,12 @@ ul.social-buttons li a:active {
 .btn:active:focus {
   outline: none;
 }
-.training-modal .modal-dialog {
+.portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
   width: auto;
 }
-.training-modal .modal-content {
+.portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -681,28 +681,28 @@ ul.social-buttons li a:active {
   padding: 100px 0;
   text-align: center;
 }
-.training-modal .modal-content h2 {
+.portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
   font-size: 3em;
 }
-.training-modal .modal-content p {
+.portfolio-modal .modal-content p {
   margin-bottom: 20px;
 }
-.training-modal .modal-content p.item-intro {
+.portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
 }
-.training-modal .modal-content ul.list-inline {
+.portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
   text-align: center;
 }
-.training-modal .modal-content img {
+.portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
-.training-modal .close-modal {
+.portfolio-modal .close-modal {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -711,10 +711,10 @@ ul.social-buttons li a:active {
   right: 25px;
   cursor: pointer;
 }
-.training-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-.training-modal .close-modal .lr {
+.portfolio-modal .close-modal .lr {
   height: 75px;
   width: 1px;
   margin-left: 35px;
@@ -726,7 +726,7 @@ ul.social-buttons li a:active {
   /* Safari and Chrome */
   z-index: 1051;
 }
-.training-modal .close-modal .lr .rl {
+.portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
   background-color: #222222;
@@ -737,7 +737,7 @@ ul.social-buttons li a:active {
   /* Safari and Chrome */
   z-index: 1052;
 }
-.training-modal .modal-backdrop {
+.portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
@@ -758,10 +758,42 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
+/*My styles*/
 #test {
   transition: transform 1s;
 }
 #test:hover {
   transform: scale(1.2);
 }
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #fed136;
+z-index: 30;}
+
+.contpre small{font-size:25px;}
+
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(circles.svg) center center no-repeat;
+background-size:41px;
+margin: -16px 0 0 -16px;}
