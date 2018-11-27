@@ -4,4 +4,7 @@ from .models import Employee
 
 def home(request):
     employee = Employee.objects
-    return render(request, 'home.html', {'employee': employee})
+    return render(request, 'main.html', {'employee': employee})
+
+def training(request):
+    return render(request,'training.html')

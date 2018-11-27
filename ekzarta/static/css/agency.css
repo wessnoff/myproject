@@ -203,10 +203,11 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #fec503;
 }
+
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
+    /*background-color: transparent; !* change navbar-top to trasparent*!*/
+    padding: 15px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -218,6 +219,7 @@ fieldset[disabled] .btn-xl.active {
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
   }
@@ -756,3 +758,42 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+/*My styles*/
+#test {
+  transition: transform 1s;
+}
+#test:hover {
+  transform: scale(1.2);
+}
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #fed136;
+z-index: 30;}
+
+.contpre small{font-size:25px;}
+
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(circles.svg) center center no-repeat;
+background-size:41px;
+margin: -16px 0 0 -16px;}
