@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Ekzarta-sport</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" />
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -43,7 +44,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="{% url 'main' %}">Ekzarta</a>
+                <a class="navbar-brand page-scroll" href="{% url 'main' %}">Ekzarta-sport</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,10 +60,10 @@
                         <a class="page-scroll" href="{% url 'training' %}">Тренировки</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">О нас</a>
+                        <a class="page-scroll" href="{% url 'about' %}">О нас</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Наша команда</a>
+                        <a class="page-scroll" href="{% url 'team' %}">Наша команда</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Контакты</a>
