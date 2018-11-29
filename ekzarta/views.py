@@ -8,3 +8,10 @@ def home(request):
 
 def training(request):
     return render(request,'training.html')
+
+def team(request):
+    employee = Employee.objects
+    return render(request, 'team.html', {'employee': employee})
+
+def about(request):
+    return render(request, 'about.html')
