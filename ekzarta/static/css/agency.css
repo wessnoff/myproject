@@ -292,7 +292,7 @@ header .intro-text .intro-lead-in {
 }
 
 .jumbotron {
-  background: rgb(52, 53, 71);
+  /*background: rgb(52, 53, 71);*/
   /* This is for ie8 and below */
   background: rgba(52, 53, 71, 0.7);
 }
