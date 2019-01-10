@@ -1,10 +1,10 @@
 from django.shortcuts import render
-from .models import Employee
+from .models import Employee,Reviews
 # Create your views here.
 
 def home(request):
-    employee = Employee.objects
-    return render(request, 'main.html', {'employee': employee})
+    review = Reviews.objects
+    return render(request, 'main.html', {'review': review})
 
 def training(request):
     return render(request,'training.html')

@@ -23,3 +23,11 @@ class Contacts(models.Model):
 
     def __str__(self):
         return self.city + ' ' + self.address
+
+class Reviews(models.Model):
+    """Reviews model"""
+    v_name = models.TextField(max_length=100, null=False)
+    v_review = models.TextField(max_length=300, null=False)
+
+    def __str__(self):
+        return self.v_name
