@@ -934,6 +934,7 @@ body {
   margin: -16px 0 0 -16px;
 }
 
-img {
-    object-fit: cover;
+.glyphicon {
+  margin: 20px 0;
+  padding: 40px 0;
 }
