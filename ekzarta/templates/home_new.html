@@ -11,9 +11,50 @@
 
     <title>Ekzarta-sport</title>
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"/>
+    <style>
+    body {
+      background-color: #fed136;
+        }
+        #p_prldr {
+          position: fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: #fed136;
+          z-index: 30;
+        }
 
+        .contpre small {
+          font-size: 25px;
+        }
+
+        .contpre {
+          width: 250px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 48%;
+          margin-left: -125px;
+          margin-top: -75px;
+          color: #fff;
+          font-size: 40px;
+          letter-spacing: -2px;
+          text-align: center;
+          line-height: 35px;
+        }
+
+        #p_prldr .svg_anm {
+          position: absolute;
+          width: 41px;
+          height: 41px;
+          background: url(circles.svg) center center no-repeat;
+          background-size: 41px;
+          margin: -16px 0 0 -16px;
+        }
+    </style>
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
@@ -24,7 +65,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+    <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -128,8 +169,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-
-                    <div id="myCarousel" class="carousel slide" style="width: 100%; height: 100%">
+                    <div id="myCarousel" class="carousel slide">
                         {#            <div id="myCarousel" class="carousel slide" data-ride="carousel">#}
                         <!-- Indicators -->
                         <!-- Wrapper for slides -->
