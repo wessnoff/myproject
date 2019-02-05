@@ -904,3 +904,9 @@ div .carousel-inner h5 {
     margin: 0 80px;
     padding: 10px 40px 20px 40px;
 }
+
+section#reviews {
+  padding: 10px;
+  font-size: 30px;
+
+}
