@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  webkit-tap-highlight-color: #fed136;
 }
 
 .text-muted {
@@ -892,11 +893,6 @@ img::-moz-selection {
   background: transparent;
 }
 
-body {
-  webkit-tap-highlight-color: #fed136;
-}
-
-
 .carousel-control, .carousel-control-next-icon {
     background-color: transparent;
 }
@@ -904,14 +900,7 @@ body {
 div .carousel-inner {
   height: auto;
 }
-<<<<<<< HEAD
 div .carousel-inner h5 {
     margin: 0 80px;
     padding: 10px 40px 20px 40px;
-=======
-
-.glyphicon {
-  margin: 20px 0;
-  padding: 40px 0;
->>>>>>> 083b452f1f46dfc150bdfdebb16bd527822346fb
 }
