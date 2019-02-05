@@ -1,17 +1,20 @@
 from django.shortcuts import render
 from .models import Employee,Reviews
-# Create your views here.
+
 
 def home(request):
     review = Reviews.objects
     return render(request, 'main.html', {'review': review})
 
 def training(request):
-    return render(request,'training.html')
+    review = Reviews.objects
+    return render(request,'training.html', {'review': review})
 
 def team(request):
+    review = Reviews.objects
     employee = Employee.objects
-    return render(request, 'team.html', {'employee': employee})
+    return render(request, 'team.html', {'employee': employee, 'review': review})
 
 def about(request):
-    return render(request, 'about.html')
+    review = Reviews.objects
+    return render(request, 'about.html', {'review': review})
