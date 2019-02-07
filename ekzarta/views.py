@@ -6,6 +6,10 @@ def home(request):
     review = Reviews.objects
     return render(request, 'main.html', {'review': review})
 
+def services(request):
+    review = Reviews.objects
+    return render(request,'services.html', {'review': review})
+
 def training(request):
     review = Reviews.objects
     return render(request,'training.html', {'review': review})

@@ -51,7 +51,7 @@
         }
     </style>
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
@@ -98,7 +98,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#">Услуги</a>
+                    <a class="page-scroll" href="{% url 'services' %}">Услуги</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="{% url 'training' %}">Тренировки</a>
