@@ -896,6 +896,8 @@ img::-moz-selection {
 
 .carousel-control, .carousel-control-next-icon {
     background-color: transparent;
+    width: 20px;
+
 }
 
 div .carousel-inner {
@@ -909,4 +911,8 @@ div .carousel-inner h5 {
 section#reviews {
   padding: 10px;
   font-size: 30px;
+}
+
+ul .ekz_list {
+  padding: 10px 5px 5px 5px;
 }
