@@ -225,5 +225,28 @@
 <!-- Theme JavaScript -->
 <script src="{% static 'js/agency.min.js' %}"></script>
 <script src="{% static 'js/preloader.js' %}"></script>
+
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+
+    $(video).click(function () {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+</script>
 </body>
 </html>
