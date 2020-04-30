@@ -975,3 +975,6 @@ ul .ekz_list {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.info {
+    padding: 30px;
+}
