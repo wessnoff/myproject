@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Employee,Reviews
-
+from django.views.generic import TemplateView
 
 def home(request):
     review = Reviews.objects
@@ -22,3 +22,6 @@ def team(request):
 def about(request):
     review = Reviews.objects
     return render(request, 'about.html', {'review': review})
+
+class MainView(TemplateView):
+    template_name = "main_scroll.html"

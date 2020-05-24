@@ -10,7 +10,8 @@
         <div id="video" class="video-container">
             <div class="color-overlay"></div>
             <video autoplay muted loop id="myVideo">
-                <source src="{% static 'video/video.mp4' %}" type="video/mp4">
+                <source src="{% static 'video/video.mp4' %}" type="video/mp4" width="100%" video="100%"
+                        style="width:100%; height:100%">
                 Your browser does not support HTML5 video.
             </video>
         </div>
@@ -19,22 +20,194 @@
         <div class="container text-center">
             <div class="intro-text text-justify">
                 <div class="intro-lead-in">
-                    <h4>Ekzarta-BALANCE - инновационный центр, развивающий культуру тренировочного процесса и
-                        эффективного восстановления.
-                        Здесь повышают качество жизни клиентов и помогают удерживать
-                        баланс между спортом и деловой активностью.
-                        Используются методики проверенные временем,
-                        позволяющие разделять ответственность за Ваш результат (спорт, реабилитация, эстетика).
-                        Превосходство в спорте - превосходство в бизнесе - твое превосходство в жизни.
-                        Каждый наш КЛИЕНТ знает, что отдых и восстановление после тренировки – важная часть
-                        тренировочного процесса. Не уделяя должного внимания восстановлению, невозможно достичь
-                        высоких результатов только за счет увеличения объема и интенсивности нагрузок.
-                    </h4>
+                    <div class="container-fluid">
+                        <div class="col-12 text-center">
+                            <h1>EKZARTA-BALANCE</h1>
+                        </div>
+                        <div class="col-6 offset-md-3">
+                            <h4>Территория умных практик здоровья. Клуб с философией индивидуальности,
+                                помогающий клиентам сочетать деловую активность со спортом, повышающий качество их
+                                жизни.
+                                Мы используем методики проверенные временем, ответственно подходим к тренировочному
+                                процессу,
+                                уделяем должное внимание эффективному восстановлению.<br>
+                                Лидерство в спорте + лидерство в жизни = Ваше лидерство в бизнесе.<br>
+                                Идеальное место, где царит атмосфера гармонии, внимания и комфорта, где забота о клиенте
+                                ощущается в мелочах, где гость становится единомышленником.
+                            </h4>
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <a href="#services" class="page-scroll btn btn-xl">Узнать больше</a>
 
+        </div>
+    </section>
+    <section id="trainings">
+        <div class="container">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <h4 class="panel-title">
+                                Биохакинг <i class="fa fa-plus-circle"></i>
+
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="">
+                                <li> Методика NEURAC: нейромышечное тестирование "слабого звена" опорно-двигательного
+                                    аппарата.
+                                </li>
+                                <li> Мануально-мышечное тестирование по системе прикладной кинезиологии.
+                                </li>
+                                <li> Пройти тест-исследование ДНК и его влияние на метаболизм, здоровье, физические
+                                    способности
+                                    организма.
+                                </li>
+                                <li> Анализ состава тела (биомпедансметрия): измерение базального метаболизма, процент
+                                    подкожно-жировой
+                                    клетчатки, объём сухой мышечной массы.
+                                </li>
+                                <li> Консультация нутрициолога (формирование здорового пищевого поведения).
+                                </li>
+                                <li> Индивидуальные и оздоровительные программы и сопровождение в тренировочном
+                                    процессе.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+
+                            <h4 class="panel-title">
+                                Экзарта <i class="fa fa-plus-circle"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Методика NEURAC: нейромышечное тестирование "слабого звена" опорно-двигательного
+                                    аппарата
+                                </li>
+                                <li>Мануально-мышечное тестирование по системе прикладной кинезиологии
+                                </li>
+                                <li>Пройти тест-исследование ДНК и его влияние на метаболизм, здоровье, физические
+                                    способности
+                                    организма
+                                </li>
+                                <li>Анализ состава тела (биомпедансметрия): измерение базального метаболизма, процент
+                                    подкожно-жировой
+                                    клетчатки, объём сухой мышечной массы
+                                </li>
+                                <li>Консультация нутрициолога (формирование здорового пищевого поведения)
+                                </li>
+                                <li>Индивидуальные и оздоровительные программы и сопровождение в тренировочном процессе
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+
+                            <h4 class="panel-title">
+                                Фитнес <i class="fa fa-plus-circle"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Классические силовые тренировки -функциональные тренировки: BODYBALANCE, TRX,
+                                    METABOLIC, FITBALL TRAINING, HOT BUNS
+                                </li>
+                                <li>Экзарта - 3D тренировка в воздухе</li>
+
+                                <li>COMBAT: SAVATE, Тайский Бокс, Рукопашный Бой</li>
+                                <li>Тренировки для женщин во время беременности и в постнатальный период</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+
+                            <h4 class="panel-title">
+                                Восстановление и Релакс <i class="fa fa-plus-circle"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Восстановление после травм (ПНФ, КАЛЬТЕНБОРН)
+                                </li>
+                                <li>REGENERATION - восстановитесь после физической нагрузки и стресса</li>
+                                <li>MOBILITY (Улучшает подвижность суставов, эластичность мышц и связок, растяжку)</li>
+                                <li>NORMATEC</li>
+                                <li>STRETCHING</li>
+                                <li>PILATES MAT</li>
+                                <li>ANIMAL FLOW</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+
+                            <h4 class="panel-title">
+                                Спорт <i class="fa fa-plus-circle"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Сопровождение профессиональных спортсменов</li>
+                                <li>Предсезонная подготовка</li>
+                                <li>Разработка плана индивидуальных тренировок</li>
+                                <li>Восстановление после травм</li>
+                                <li>Экзарта - тотальный контроль над своим телом</li>
+                                <li>Общая физическая подготовка (сила, выносливость, скорость, гибкость, координация)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+
+                            <h4 class="panel-title">
+                                Территория красоты <i class="fa fa-plus-circle"></i>
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Массаж классический</li>
+                                <li>Массаж антицеллюлитный</li>
+                                <li>Массаж миофасциальный</li>
+                                <li>Массаж висцеральный</li>
+                                <li>Массаж лимфодренажный</li>
+                                <li>Массаж с глубокой проработкой триггерных точек</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <section id="services" class="info">

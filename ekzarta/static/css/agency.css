@@ -1,7 +1,6 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    webkit-tap-highlight-color: #fed136;
 }
 
 .text-muted {
@@ -927,7 +926,7 @@ ul .ekz_list {
     width: 100%;
     height: 100vh;
     display: flex;
-    padding-top: 80px;
+    padding-top: 80px;services
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -977,4 +976,8 @@ ul .ekz_list {
 }
 .info {
     padding: 30px;
+}
+
+section#trainings {
+    padding: 25px;
 }
