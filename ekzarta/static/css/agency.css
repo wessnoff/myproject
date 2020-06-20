@@ -984,6 +984,8 @@ ul .ekz_list {
 
 .my_bg {
     padding-top: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .panel-default > .panel-heading {
