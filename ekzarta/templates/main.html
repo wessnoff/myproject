@@ -3,19 +3,42 @@
 
 
 {% block body_block %}
-    <!-- Header -->
-    <section class="video">
-        <h1 class="text-capitalize">Ekzarta-balance</h1>
+    <div class="container my_bg">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-        <div id="video" class="video-container">
-            <div class="color-overlay"></div>
-            <video autoplay muted loop id="myVideo">
-                <source src="{% static 'video/video.mp4' %}" type="video/mp4" width="100%" video="100%"
-                        style="width:100%; height:100%">
-                Your browser does not support HTML5 video.
-            </video>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="{% static 'img/main_bg/first_bg.jpg' %}" alt="Фото 1">
+                </div>
+
+                <div class="item">
+                    <img src="{% static 'img/main_bg/second_bg.jpg' %}" alt="Фото 2">
+                </div>
+
+                <div class="item">
+                    <img src="{% static 'img/main_bg/third_bg.jpg' %}" alt="Фото 3">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Предыдущая</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Следующая</span>
+            </a>
         </div>
-    </section>
+    </div>
+    <!-- Header -->
     <section class="info">
         <div class="container text-center">
             <div class="intro-text text-justify">
@@ -40,7 +63,7 @@
                 </div>
 
             </div>
-            <a href="#services" class="page-scroll btn btn-xl">Узнать больше</a>
+            <a href="#services" class="page-scroll btn btn-xl"><h4 class="panel-title">Узнать больше</h4></a>
 
         </div>
     </section>
@@ -52,13 +75,12 @@
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                             <h4 class="panel-title">
                                 Биохакинг <i class="fa fa-plus-circle"></i>
-
                             </h4>
                         </a>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <ul class="">
+                            <ul class="h5">
                                 <li> Методика NEURAC: нейромышечное тестирование "слабого звена" опорно-двигательного
                                     аппарата.
                                 </li>
@@ -186,14 +208,14 @@
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
 
                             <h4 class="panel-title">
                                 Территория красоты <i class="fa fa-plus-circle"></i>
                             </h4>
                         </a>
                     </div>
-                    <div id="collapse4" class="panel-collapse collapse">
+                    <div id="collapse6" class="panel-collapse collapse">
                         <div class="panel-body">
                             <ul>
                                 <li>Массаж классический</li>
@@ -256,3 +278,4 @@
     </section>
     <!-- Reviews -->
 {% endblock %}
+

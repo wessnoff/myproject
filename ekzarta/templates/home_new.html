@@ -11,74 +11,10 @@
 
     <title>Ekzarta-balance</title>
     <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"/>
-    <style media="screen">
-        #p_prldr {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background: #fed136;
-            z-index: 30;
-        }
-
-        .contpre small {
-            font-size: 25px;
-        }
-
-        .contpre {
-            width: 250px;
-            height: 100px;
-            position: absolute;
-            left: 50%;
-            top: 48%;
-            margin-left: -125px;
-            margin-top: -75px;
-            color: #fff;
-            font-size: 40px;
-            letter-spacing: -2px;
-            text-align: center;
-            line-height: 35px;
-        }
-
-        #p_prldr .svg_anm {
-            position: absolute;
-            width: 41px;
-            height: 41px;
-            background: url("{% static 'css/circles.svg' %}") center center no-repeat;
-            background-size: 41px;
-            margin: -16px 0 0 -16px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        #myVideo {
-            position: relative;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
-
-        #myBtn {
-            width: 200px;
-            font-size: 18px;
-            padding: 10px;
-            border: none;
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        #myBtn:hover {
-            background: #ddd;
-            color: black;
-        }
-    </style>
+    <style media="screen"></style>
+    <link href="{% static 'css/preloader.css' %}" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
@@ -124,6 +60,7 @@
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
+                <!--
                 <li>
                     <a class="page-scroll" href="{% url 'services' %}">Центр красоты</a>
                 </li>
@@ -131,10 +68,11 @@
                     <a class="page-scroll" href="{% url 'training' %}">Тренировки</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="{% url 'about' %}">О нас</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="{% url 'team' %}">Наша команда</a>
+                </li>
+                -->
+                <li>
+                    <a class="page-scroll" href="{% url 'about' %}">О нас</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Контакты</a>
@@ -230,6 +168,10 @@
         } else {
             video.pause();
         }
+    });
+    $('#myCarousel').carousel({
+        interval: 3000,
+        cycle: true
     });
 </script>
 </body>
