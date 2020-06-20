@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Employee(models.Model):
     """Blog model"""
     first_name = models.TextField(max_length=100, null=False)
@@ -8,10 +9,11 @@ class Employee(models.Model):
     website = models.URLField(null=True)
     email = models.EmailField()
     info = models.TextField(null=True)
-    skills = models.TextField(null=True,max_length=500)
+    skills = models.TextField(null=True, max_length=500)
 
     def __str__(self):
         return '%s %s' % (self.first_name, self.last_name)
+
 
 class Contacts(models.Model):
     """Blog model"""
@@ -23,6 +25,7 @@ class Contacts(models.Model):
 
     def __str__(self):
         return self.city + ' ' + self.address
+
 
 class Reviews(models.Model):
     """Reviews model"""
