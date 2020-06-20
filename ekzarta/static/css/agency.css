@@ -1000,6 +1000,10 @@ ul .ekz_list {
     font-size: 18px;
 }
 
+.panel-body > ul {
+    padding-left: 20px;
+}
+
 @media (min-width: 768px) {
     .my_bg {
         padding-top: 80px;
