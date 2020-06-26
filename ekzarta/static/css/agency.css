@@ -67,7 +67,7 @@ h6 {
 }
 
 .bg-darkest-gray {
-    background-color: #222222;
+    background-color: #17212e;
 }
 
 .btn-primary {
@@ -171,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-custom {
-    background-color: #000000;
+    background-color: #17212e;
     border-color: transparent;
 }
 
@@ -280,7 +280,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-custom.affix {
-        background-color: #222222;
+        background-color: #17212e;
         padding: 10px 0;
     }
 
@@ -660,7 +660,7 @@ section h3.section-subheading {
 }
 
 section#contact {
-    background-color: #222222;
+    background-color: #17212e;
     /*background-image: url('../img/map-image.png');*/
     background-position: center;
     background-repeat: no-repeat;
@@ -757,7 +757,7 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    background-color: #222222;
+    background-color: #17212e;
     height: 40px;
     width: 40px;
     border-radius: 100%;
@@ -849,7 +849,7 @@ ul.social-buttons li a:active {
     height: 75px;
     width: 1px;
     margin-left: 35px;
-    background-color: #222222;
+    background-color: #17212e;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* IE 9 */
@@ -861,7 +861,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .close-modal .lr .rl {
     height: 75px;
     width: 1px;
-    background-color: #222222;
+    background-color: #17212e;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     /* IE 9 */
